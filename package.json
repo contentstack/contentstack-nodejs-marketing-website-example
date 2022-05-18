@@ -5,7 +5,9 @@
   "author": "Contentstack",
   "private": true,
   "scripts": {
-    "start": "node app.js"
+    "start": "node app.js",
+    "prepare": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "dependencies": {
     "async": "^2.3.0",
@@ -17,6 +19,8 @@
     "express": "^4.16.4",
     "morgan": "^1.9.1",
     "nunjucks": "^3.0.0",
-    "serve-favicon": "~2.4.2"
-  }
+    "serve-favicon": "~2.4.2",
+    "@snyk/protect": "latest"
+  },
+  "snyk": true
 }
